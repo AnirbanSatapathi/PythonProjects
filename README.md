@@ -3,6 +3,24 @@
 
 This project demonstrates a simple maze pathfinding algorithm using the `curses` library in Python. 
 The algorithm performs a breadth-first search (BFS) to find the shortest path from the start point `O` to the end point `X` in a given maze.
+maze = [
+    ["#", "O", "#", "#", "#", "#", "#", "#", "#"],
+    ["#", " ", " ", " ", "#", " ", " ", " ", "#"],
+    ["#", " ", "#", " ", "#", " ", "#", " ", "#"],
+    ["#", " ", "#", " ", " ", " ", "#", " ", "#"],
+    ["#", " ", "#", "#", "#", " ", "#", " ", "#"],
+    ["#", " ", " ", " ", " ", " ", "#", " ", "#"],
+    ["#", "#", "#", "#", "#", "#", "#", " ", "#"],
+    ["#", " ", " ", " ", " ", " ", " ", " ", "#"],
+    ["#", "#", "#", "#", "#", "#", "#", "X", "#"]
+]
+# represents walls.
+O represents the start point.
+X represents the end point.
+Spaces ( ) represent walkable paths.
+
+time.sleep(0.2)  # Adjust the delay as needed
+
 # Mastermind Game
 
 A simple Mastermind game implemented in Python. The objective is to guess the correct sequence of colors within a limited number of tries.
